@@ -1,0 +1,17 @@
+body {
+  background-color: #eef2ff;
+}
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+.card {
+  transition: 0.3s;
+  border-radius: 12px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+footer {
+  font-size: 18px;
+}
