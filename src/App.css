@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #eaeaea;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9900;
+  margin-right: 20px;
+}
+
+.location {
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+}
+
+.search-box select,
+.search-box input {
+  padding: 8px;
+  border: none;
+}
+
+.search-box input {
+  width: 100%;
+}
+
+.search-box button {
+  background: #febd69;
+  border: none;
+  padding: 8px 12px;
+}
+
+.nav-links {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.hero {
+  height: 220px;
+  background: url("https://m.media-amazon.com/images/G/31/img21/Wireless/WLA/MayART/D23818516_IN_WLD-MayART_GW_Hero_3000x1200._CB589594919_.jpg");
+  background-size: cover;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  height: 150px;
+  max-width: 100%;
+}
+
+.old {
+  color: gray;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.rating {
+  color: orange;
+}
+
+.btn {
+  padding: 6px;
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.cart-btn {
+  background: #ffd814;
+  border: none;
+}
+
+.wish {
+  background: pink;
+  border: none;
+}
+
+.cart-box {
+  background: white;
+  color: black;
+  padding: 15px;
+  margin: 20px;
+}
+
+.cart-box h2 {
+  text-align: center;
+}
+
+footer {
+  background: #131921;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
